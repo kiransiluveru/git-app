@@ -15,7 +15,7 @@ class UserProfile extends Component {
         this.setState({ isCallInProgress: true })
         axios.get(`https://api.github.com/users/${userName}`, {
             headers: {
-                'Authorization': 'token ee86ae4dbcd43ea38ee3c058496c45d203619502'
+                'Authorization': 'token '
             }
         })
             .then(response => this.setState({ userProfileInfo: response.data, isCallInProgress: false }));
