@@ -31,7 +31,7 @@ class Users extends Component {
         }
         axios.get(`https://api.github.com/users?since=${since}&per_page=${per_page}`, {
             headers: {
-                'Authorization': 'token ee86ae4dbcd43ea38ee3c058496c45d203619502'
+                'Authorization': 'token '
             }
         })
             .then(response => {
@@ -63,7 +63,7 @@ class Users extends Component {
         setTimeout(() => {
             axios.get(`https://api.github.com/users?since=${since}&per_page=${per_page}`, {
                 headers: {
-                    'Authorization': 'token ee86ae4dbcd43ea38ee3c058496c45d203619502'
+                    'Authorization': 'token '
                 }
             })
                 .then(response => {
@@ -83,7 +83,7 @@ class Users extends Component {
         if (search.trim().length) {
             axios.get(`https://api.github.com/search/users?q=${search}&page=0&per_page=${per_page}`, {
                 headers: {
-                        'Authorization': 'token ee86ae4dbcd43ea38ee3c058496c45d203619502'
+                        'Authorization': 'token '
                     }
                 })
                     .then(response => {
